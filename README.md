@@ -1,3 +1,7 @@
+account untuk login sebagai superadmin
+email : superadmin
+password : 1234
+
 Entity Relationship Diagram (ERD) Car Management
 
 ![image](https://github.com/aufarabul/aufarabul-aufarabul-24001085-km6-muh-car_management-ch4/assets/136091204/4b1122c4-4fe8-4ec4-aaa9-3986a8d354c6)
