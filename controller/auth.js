@@ -70,7 +70,7 @@ exports.registerAdmin = async (req, res, next) => {
     }
     if (role == "" || !role) {
       return next({
-        message: "Name must be filled!",
+        message: "role must be filled!",
         statusCode: 400,
       });
     }

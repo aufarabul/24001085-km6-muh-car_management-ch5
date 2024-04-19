@@ -1,0 +1,4 @@
+runtime: nodejs20
+service: muhammad-aufar-chapter-5
+vpc_access_connector:
+  name: "projects/solar-bolt-420712/locations/asia-southeast2/connectors/connect-to-sql"
