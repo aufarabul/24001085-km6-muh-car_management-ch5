@@ -15,6 +15,20 @@ app.use(
     tempFileDir: process.env.NODE_ENV == "development" ? "./tmp" : "/tmp",
   })
 );
+app.post("/fileupload", (req, res) => {
+  if (!req.files || !req.files.image) {
+    // Tangani kasus ketika tidak ada file yang diunggah
+    return res.status(400).send("No file uploaded.");
+  }
+
+  // Proses file yang diunggah (misalnya, simpan ke disk atau lakukan tindakan lain)
+  const uploadedImage = req.files.image;
+  // ...
+
+  // Respon dengan pesan berhasil
+  res.send("File uploaded successfully.");
+});
+
 app.use(express.static("public"));
 
 app.use("/api", router);
