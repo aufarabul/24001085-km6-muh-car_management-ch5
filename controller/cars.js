@@ -83,7 +83,7 @@ exports.updateCar = async (req, res, next) => {
   try {
     const { id } = req.params;
     const { plate, manufacture, model, year } = req.body;
-    const { image } = req.files;
+    const image = req.files?.image;
     if (!plate || plate == "") {
       return next({
         message: "plate must be provided!",

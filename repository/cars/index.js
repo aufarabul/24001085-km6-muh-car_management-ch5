@@ -100,21 +100,6 @@ exports.addCar = async (payload) => {
   await setData(key, data, 300);
 
   return data;
-  // let redisClient, data;
-  // try {
-  //   // Create data to postgres
-  //   data = await cars.create(payload);
-  //   // Save to redis (cache)
-  //   const key = `cars:${data.id}`;
-  //   redisClient = await redis();
-  //   const dataString = JSON.stringify(data);
-  //   await redisClient.set(key, dataString, {
-  //     EX: 300,
-  //   });
-  //   return data;
-  // } finally {
-  //   await redisClient.disconnect();
-  // }
 };
 
 exports.updateCar = async (id, payload) => {
