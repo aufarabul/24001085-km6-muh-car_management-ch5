@@ -36,7 +36,7 @@ exports.getCarbyId = async (req, res, next) => {
 exports.addCar = async (req, res, next) => {
   try {
     const { plate, manufacture, model, year } = req.body;
-    const { image } = req?.files;
+    const { image } = req.files;
     if (!plate || plate == "") {
       return next({
         message: "plate must be provided!",
